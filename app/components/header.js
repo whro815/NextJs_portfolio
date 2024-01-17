@@ -12,9 +12,15 @@ export default function Header(){
                 <span className="ml-3 text-xl">조계현 포트폴리오</span>
               </a>
               <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-               <Link className="mr-5 hover:text-gray-900" href="/">HOME</Link>
-               <Link className="mr-5 hover:text-gray-900" href="/aboutMe">ABOUTME</Link>
-               <Link className="mr-5 hover:text-gray-900" href="/projects">PROJECTS</Link>
+               <Link href="/" legacyBehavior>
+                  <a className="mr-5 hover:text-gray-900">HOME</a>
+               </Link>
+               <Link href="/aboutMe" legacyBehavior>
+                  <a className="mr-5 hover:text-gray-900">ABOUTME</a>
+               </Link>
+               <Link href="/projects" legacyBehavior>
+                  <a className="mr-5 hover:text-gray-900">PROJECTS</a>
+               </Link>
               </nav>
               {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
