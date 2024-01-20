@@ -1,4 +1,7 @@
+import ProjectItem from './project-item';
+
 export default async function Projects() {
+
     const { Client } = require('@notionhq/client');
   
     const notion = new Client({ auth: process.env.NOTION_TOKEN });
@@ -18,12 +21,12 @@ export default async function Projects() {
                 aProject.properties.Name.title[0].plain_text
     ));
 
-
-    console.log(projectNames)
-
     return (
         <>
-            {projectNames}
+           <h1>총 프로젝트: {response.results.length}</h1>
+            { response.results.map((aProject) => ( 
+                <ProjectItem key={aProject.id} data={aProject}/>
+            ))}
         </>
     )
     
