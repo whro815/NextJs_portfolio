@@ -1,8 +1,11 @@
-export default function LayoutRouter(props){
+export default function LayoutRouter({ children }){
+
     return(
+        <>
         <from>
             <h2>projects</h2>
-            {props.children}
+            {children}
         </from>
+        </>
     )
 }
