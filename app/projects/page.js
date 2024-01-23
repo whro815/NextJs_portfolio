@@ -17,16 +17,16 @@ export default async function Projects() {
                 ],
     });
     
-    const projectNames = response.results.map((aProject) => (
-                aProject.properties.Name.title[0].plain_text
-    ));
+   // console.log(JSON.stringify(response));
 
     return (
         <>
-           <h1>총 프로젝트: {response.results.length}</h1>
-            { response.results.map((aProject) => ( 
-                <ProjectItem key={aProject.id} data={aProject}/>
-            ))}
+           {/* <h1 className="text-4xl">총 프로젝트: {response.results.length}</h1> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 py-10 m-6 gap-8 sm:w-full">
+                { response.results.map((aProject) => ( 
+                    <ProjectItem key={aProject.id} data={aProject}/>
+                ))}
+            </div>
         </>
     )
     
