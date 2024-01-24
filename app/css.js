@@ -17,3 +17,7 @@ export const bodyStyle = {
 export const addStyle = {
     color:"#EBC7E6"
 }
+
+export const addBodyStyle = {
+    background:"#EBC7E6"
+}

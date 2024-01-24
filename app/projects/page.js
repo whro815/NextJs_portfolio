@@ -1,4 +1,10 @@
 import ProjectItem from './project-item';
+import { layerStyle,
+        addStyle,
+        bodyStyle,
+        bodyFontStyle,
+        layerFontStyle }
+from '../css.js';
 
 export default async function Projects() {
 
@@ -22,7 +28,13 @@ export default async function Projects() {
     return (
         <>
            {/* <h1 className="text-4xl">총 프로젝트: {response.results.length}</h1> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 py-10 m-6 gap-8 sm:w-full">
+            <div className="grid
+                            grid-cols-1
+                            md:grid-cols-2
+                            py-10
+                            gap-8
+                            bg-violet-100
+                            sm-w-full">
                 { response.results.map((aProject) => ( 
                     <ProjectItem key={aProject.id} data={aProject}/>
                 ))}

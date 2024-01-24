@@ -27,9 +27,9 @@ export default function Header(){
                </Link>
               </nav>
                 {/* 다크 모드 */}
-                <Providers>
+                {/* <Providers>
                   <DarkModeBtn />
-                </Providers>
+                </Providers> */}
             </div>
           </header>
       </>
