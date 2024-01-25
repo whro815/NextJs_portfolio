@@ -34,14 +34,7 @@ export default function ProjectItem({data}){
     const sc2_1 = data.properties.sc2_1.rich_text[0].plain_text
     const sc2_1_1 = data.properties.sc2_1_1.rich_text[0].plain_text
     const sc2_2 = data.properties.sc2_2.rich_text[0].plain_text
-    // console.log(title)
-    // console.log(projectUrl)
-    // console.log(description)
-    // console.log(imgSrc);
-    // console.log(workPeriod);
-    // console.log(elTag);
-    // console.log(solution1);
-    // console.log(solution2);
+
 
     return(
         <>
@@ -50,7 +43,8 @@ export default function ProjectItem({data}){
                             p-4 
                             m-3 
                             bg-neutral-50
-                            rounded-md">
+                            rounded-md 
+                            transition duration-300 transform border border-gray-300 hover:scale-105 hover:shadow-lg">
                 <Image 
                         src={imgSrc}
                         width={500}
@@ -60,22 +54,21 @@ export default function ProjectItem({data}){
                         quality={100}
                 />
                 <div className="p-4 flex flex-col">
-                    <Link href={ projectUrl }>
-                        <h2 className="text-2xl font-bold">{ title } </h2>  
-                    </Link>
+                    
+                    <h2 className="text-2xl font-bold">{ title } </h2>  
+                    
                     <h2 className="mt-4 text-xl mb-2"> 
-                        { description } </h2>
+                        { description } 
+                    </h2>
                     <div className="inline-flex">
-                    {/* class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" */}
                         { elTag.map((tag) => (
-                            <div key={tag.id}
-                                className="px-2
-                                            py-1 
-                                            mr-2 
-                                            rounded-md 
-                                            w-30 
-                                            mb-2
-                                            text-white" style={bodyStyle}>
+                            <div key={tag.id} className="px-2
+                                                        py-1 
+                                                        mr-2 
+                                                        rounded-md 
+                                                        w-30 
+                                                        mb-2
+                                                        text-white" style={bodyStyle}>
                                 { tag.name } 
                             </div>
                         ))}
@@ -100,7 +93,26 @@ export default function ProjectItem({data}){
                     <h2> {"\u00A0"}{ sc2_1 } </h2>
                     <h2> {"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}{ sc2_1_1 } </h2>
                     <h2> {"\u00A0"}{ sc2_2 } </h2>
+
+                    <div className="flex 
+                                    justify-center 
+                                    w-40 
+                                    rounded-md" style={layerStyle}>
+
+                        <Link href={ projectUrl } legacyBehavior>
+                            <a className="inline-flex 
+                                        py-2
+                                        px-6
+                                        focus:outline-none
+                                        hover:bg-indigo-600
+                                        text-lg" style={addStyle}>
+                            사이트 이동
+                            </a>
+                        </Link>
+                     </div>
+
                 </div>
+                
             </div>
         </>
     );

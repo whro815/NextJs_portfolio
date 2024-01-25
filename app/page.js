@@ -24,8 +24,7 @@ export default function Home() {
                         px-5 
                         py-24 
                         md:flex-row 
-                        flex-col 
-                        items-center">
+                        flex-col items-center">
           <div className="lg:flex-grow
                           md:w-1/2 
                           lg:pr-24 
@@ -47,15 +46,17 @@ export default function Home() {
             수 많은 도전과 경험을 통해 다양한 기술 스택을 쌓아 과거의 자신을 관철하며 나아지기 위해<br/>
             반성하고 성찰하려고 노력하는 백엔드 개발자가 되고 싶습니다.
             </p>
-            <div className="flex justify-center" style={layerStyle}>
+            <div className="flex 
+                            justify-center 
+                            rounded-md" style={layerStyle}>
               <Link href='/projects' legacyBehavior>
                 <a className="inline-flex 
                               py-2
                               px-6
                               focus:outline-none
                               hover:bg-indigo-600
-                              rounded
-                              text-lg" style={addStyle}>
+                              text-lg
+                              rounded-md" style={addStyle}>
                   프로젝트 보러가기
                 </a>
               </Link>

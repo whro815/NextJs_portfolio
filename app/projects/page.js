@@ -31,7 +31,7 @@ export default async function Projects() {
             <div className="grid
                             grid-cols-1
                             md:grid-cols-2
-                            py-10
+                            py-10 
                             gap-8
                             bg-violet-100
                             sm-w-full">

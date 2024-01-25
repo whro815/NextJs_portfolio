@@ -15,8 +15,22 @@ export default function AboutMe(){
                 <div class="container px-5 py-24 mx-auto">
                     
                     <div className="flex flex-wrap -m-4">
-                        <div className="p-4 xl:w-1/4 md:w-1/2 w-full border-indigo-500">
-                            <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden bg-neutral-50">
+                        <div className="p-4
+                                        xl:w-1/4 
+                                        md:w-1/2 
+                                        w-full 
+                                        border-indigo-500">
+                            <div className="h-full
+                                            p-6
+                                            rounded-lg 
+                                            border-2 
+                                            border-indigo-500 
+                                            flex 
+                                            flex-col 
+                                            relative 
+                                            overflow-hidden 
+                                            bg-neutral-50
+                                            transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 className="text-4xl pb-4 mb-4 border-b border-gray-800 leading-none font-bold">
                                     Career
                                 </h1>
@@ -35,7 +49,16 @@ export default function AboutMe(){
                         </div>
 
                         <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-                            <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden bg-neutral-50">
+                            <div class="h-full 
+                                        p-6 
+                                        rounded-lg 
+                                        border-2 
+                                        border-indigo-500 
+                                        flex flex-col 
+                                        relative 
+                                        overflow-hidden 
+                                        bg-neutral-50
+                                        transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 class="text-4xl leading-none flex items-center pb-4 mb-4 border-b border-gray-800 font-bold">
                                         Activities
                                 </h1>
@@ -54,7 +77,16 @@ export default function AboutMe(){
                         </div>
 
                         <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-                            <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden bg-neutral-50">
+                            <div class="h-full 
+                                        p-6 
+                                        rounded-lg 
+                                        border-2 
+                                        border-indigo-500 
+                                        flex flex-col 
+                                        relative 
+                                        overflow-hidden 
+                                        bg-neutral-50
+                                        transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 class="text-4xl leading-none flex items-center pb-4 mb-4 border-b border-gray-800 font-bold">
                                     Certification
                                 </h1>
@@ -82,7 +114,17 @@ export default function AboutMe(){
                         </div>
 
                         <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-                            <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden bg-neutral-50">
+                            <div class="h-full 
+                                        p-6 
+                                        rounded-lg 
+                                        border-2 
+                                        border-indigo-500 
+                                        flex 
+                                        flex-col 
+                                        relative 
+                                        overflow-hidden 
+                                        bg-neutral-50
+                                        transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 className="text-4xl leading-none flex items-center pb-4 mb-4 border-b border-gray-800 font-bold">
                                     <span>Skills</span>
                                 </h1>
