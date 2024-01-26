@@ -29,8 +29,8 @@ export default function Home() {
 
               <div className="lg:flex-grow
                               md:w-1/2 
-                              lg:pr-24 
-                              md:pr-16 
+                              lg:pl-24 
+                              md:pl-16 
                               flex flex-col 
                               md:items-start 
                               md:text-left 
@@ -54,21 +54,33 @@ export default function Home() {
                     </p>
 
                     <div className="flex 
-                                    justify-center 
-                                    rounded-md" style={layerStyle}>
-                      <Link href='/projects' legacyBehavior>
-                        <a className="inline-flex 
-                                      py-2
-                                      px-6
-                                      focus:outline-none
-                                      hover:bg-indigo-600
-                                      text-lg
-                                      rounded-md" style={addStyle}>
-                          프로젝트 보러가기
-                        </a>
-                      </Link>
+                                    justify-center" >
+
+                        <Link href='/projects' legacyBehavior>
+                            <a className="inline-flex 
+                                          mr-5
+                                          p-6
+                                          bg-indigo-500
+                                          hover:bg-gray-900
+                                          text-lg
+                                          rounded-md" style={addStyle}>
+                              프로젝트
+                            </a>
+                        </Link>
+
+                        <Link href='/projects' legacyBehavior>
+                            <a className="inline-flex 
+                                          mr-5
+                                          p-6
+                                          bg-indigo-500
+                                          hover:bg-gray-900
+                                          text-lg
+                                          rounded-md" style={addStyle}>
+                              문서
+                            </a>
+                        </Link>
+
                     </div>
-            
               </div>
 
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

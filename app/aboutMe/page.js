@@ -1,10 +1,10 @@
+'use client';
 import { layerStyle,
     addStyle,
     bodyStyle,
     bodyFontStyle,
     layerFontStyle }
 from '../css.js';
-
 
 export default function AboutMe(){
     return(
@@ -16,13 +16,19 @@ export default function AboutMe(){
                 <div class="container px-5 py-24 mx-auto">
 
                     <div class="flex flex-col text-center w-full mb-20">
-                        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
+                        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">내 소개</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
                         <div class="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
-                            <button class="py-1 px-4 bg-indigo-500 text-white focus:outline-none">Monthly</button>
-                            <button class="py-1 px-4 focus:outline-none">Annually</button>
+                            <button className="py-1
+                                            px-4 
+                                            bg-indigo-500 
+                                            text-white 
+                                            focus:outline-none 
+                                            hover:bg-gray-900"
+                                            onClick={() => window.open("https://whro815.github.io/portfo/","_blank")} >My Doc</button>
+                            <button className="py-1 px-4 focus:outline-none">Annually</button>
                         </div>
-                    </div>`
+                    </div>
                     
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4
@@ -43,7 +49,7 @@ export default function AboutMe(){
                                             bg-neutral-50
                                             transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 className="text-4xl pb-4 mb-4 border-b border-gray-800 leading-none font-bold">
-                                    Career
+                                    경력
                                 </h1>
                                 <p className="flex items-center mb-2">
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
@@ -71,7 +77,7 @@ export default function AboutMe(){
                                         bg-neutral-50
                                         transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 className="text-4xl leading-none flex items-center pb-4 mb-4 border-b border-gray-800 font-bold">
-                                        Activities
+                                        활동
                                 </h1>
                                 <p className="flex items-center mb-2">
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
@@ -99,7 +105,7 @@ export default function AboutMe(){
                                         bg-neutral-50
                                         transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 className="text-4xl leading-none flex items-center pb-4 mb-4 border-b border-gray-800 font-bold">
-                                    Certification
+                                    자격증
                                 </h1>
                                 <p className="flex items-center mb-2">
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
@@ -137,7 +143,7 @@ export default function AboutMe(){
                                         bg-neutral-50
                                         transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h1 className="text-4xl leading-none flex items-center pb-4 mb-4 border-b border-gray-800 font-bold">
-                                    <span>Skills</span>
+                                    <span>기술</span>
                                 </h1>
                                 <p className="flex items-center mb-2">
                                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
