@@ -1,4 +1,7 @@
 'use client';
+
+import Link from 'next/link';
+
 import { layerStyle,
     addStyle,
     bodyStyle,
@@ -85,10 +88,10 @@ export default function AboutMe(){
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                     </span>
-                                    에스엘 아카데미 (웹 개발, 빅데이터)
+                                    에스엘 아카데미 (웹개발, 빅데이터)
                                 </p>
                                 <p className="flex items-center mb-2">
-                                    <span className="text-xs text-gray-500">(2019.12.31 ~ 2020.12.31 (2년 7개월))</span>
+                                    <span className="text-xs text-gray-500">(2019.12.31 ~ 2020.12.31)</span>
                                 </p>
                             </div>
                         </div>
@@ -183,6 +186,24 @@ export default function AboutMe(){
                                     </span>
                                     Git, IntelliJ, VSCode, Eclipse, Notion
                                 </p>
+
+                                <p className="flex items-center mb-2">
+                                    <button className="flex
+                                                    mx-auto 
+                                                    text-white  
+                                                    border-0 
+                                                    py-2 
+                                                    px-8 
+                                                    focus:outline-none 
+                                                    hover:bg-indigo-600 
+                                                    rounded 
+                                                    text-lg"
+                                                    style={layerStyle}
+                                                    onClick={() => {window.open('/skills','_top')}}>
+                                                   더보기
+                                    </button>
+                                </p>
+
                             </div>
                         </div>
                     </div>

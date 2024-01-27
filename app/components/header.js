@@ -26,6 +26,9 @@ export default function Header(){
                <Link href="/aboutMe" legacyBehavior>
                   <a className="mr-5 hover:text-gray-900" >ABOUT</a>
                </Link>
+               <Link href="/skills" legacyBehavior>
+                  <a className="mr-5 hover:text-gray-900" >SKILLS</a>
+               </Link>
                <Link href="/projects" legacyBehavior>
                   <a className="mr-5 hover:text-gray-900" >PROJECTS</a>
                </Link>
