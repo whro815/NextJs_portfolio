@@ -18,7 +18,7 @@ export default function AboutMe(){
             <section class="min-h-screen bg-violet-100 body-font overflow-hidden">
                 <div class="container px-5 py-24 mx-auto">
 
-                    <div class="flex flex-col text-center w-full mb-20">
+                    {/* <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">내 소개</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
                         <div class="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
@@ -31,7 +31,7 @@ export default function AboutMe(){
                                             onClick={() => window.open("https://whro815.github.io/portfo/","_blank")} >My Doc</button>
                             <button className="py-1 px-4 focus:outline-none">Annually</button>
                         </div>
-                    </div>
+                    </div> */}
                     
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4

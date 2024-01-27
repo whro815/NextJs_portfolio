@@ -21,16 +21,16 @@ export default function Header(){
                 </Link>
               <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center" style={addStyle}>
                <Link href="/" legacyBehavior>
-                  <a className="mr-5 hover:text-gray-900" >HOME</a>
+                  <a className="mr-5 hover:text-gray-900" >메인</a>
                </Link>
                <Link href="/aboutMe" legacyBehavior>
-                  <a className="mr-5 hover:text-gray-900" >ABOUT</a>
+                  <a className="mr-5 hover:text-gray-900" >정보</a>
                </Link>
                <Link href="/skills" legacyBehavior>
-                  <a className="mr-5 hover:text-gray-900" >SKILLS</a>
+                  <a className="mr-5 hover:text-gray-900" >스킬</a>
                </Link>
                <Link href="/projects" legacyBehavior>
-                  <a className="mr-5 hover:text-gray-900" >PROJECTS</a>
+                  <a className="mr-5 hover:text-gray-900" >프로젝트</a>
                </Link>
               </nav>
                 {/* 다크 모드 */}

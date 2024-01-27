@@ -1,3 +1,4 @@
+'use client'
 import Animation from './components/animation.js'
 import Link from 'next/link';
 import { layerStyle,
@@ -6,6 +7,7 @@ import { layerStyle,
          bodyFontStyle,
          layerFontStyle }
 from './css.js';
+import TypeIt from "typeit-react";
 
 export default function Home() {
 
@@ -40,10 +42,15 @@ export default function Home() {
                               text-center">
                           
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium" style={layerFontStyle}>
-                      반갑습니다.
-                      <br className="hidden lg:inline-block"/>
-                      조계현입니다.
+                      <TypeIt options={{
+                        strings: ["반갑습니다. 조계현입니다."],
+                        speed: 150,
+                        loop: true,
+                        loopDelay: [2500],
+                        waitUntilVisible: true,
+                      }}/>
                     </h1>
+                     
                     
                     <p className="mb-8 leading-relaxed" style={layerFontStyle}>
                       웹 개발자 과정을 통해 백엔드 개발자로 진로를 택했습니다.<br/>
@@ -53,34 +60,40 @@ export default function Home() {
                       성찰하고 정진하는 백엔드 개발자가 되고자 합니다.
                     </p>
 
-                    <div className="flex 
-                                    justify-center" >
+                    <p className="flex items-center mb-2">
+                        <button className="flex
+                                        mx-auto 
+                                        text-white  
+                                        border-0 
+                                        py-2 
+                                        px-8
+                                        mr-5
+                                        focus:outline-none 
+                                        hover:bg-gray-600
+                                        rounded 
+                                        text-lg"
+                                        style={layerStyle}
+                                        onClick={() => {window.open('/projects','_top')}}>
+                                        프로젝트
+                        </button>
 
-                        <Link href='/projects' legacyBehavior>
-                            <a className="inline-flex 
-                                          mr-5
-                                          p-6
-                                          bg-indigo-500
-                                          hover:bg-gray-900
-                                          text-lg
-                                          rounded-md" style={addStyle}>
-                              프로젝트
-                            </a>
-                        </Link>
+                        <button className="flex
+                                        mx-auto 
+                                        text-white  
+                                        border-0 
+                                        py-2 
+                                        px-8 
+                                        focus:outline-none 
+                                        hover:bg-indigo-600 
+                                        rounded 
+                                        text-lg"
+                                        style={layerStyle}
+                                        onClick={() => {window.open('https://whro815.github.io/portfo','_blank')}}>
+                                        문서
+                        </button>
 
-                        <Link href='/projects' legacyBehavior>
-                            <a className="inline-flex 
-                                          mr-5
-                                          p-6
-                                          bg-indigo-500
-                                          hover:bg-gray-900
-                                          text-lg
-                                          rounded-md" style={addStyle}>
-                              문서
-                            </a>
-                        </Link>
+                     </p>
 
-                    </div>
               </div>
 
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
