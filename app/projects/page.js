@@ -57,7 +57,7 @@ export default async function Projects() {
                                 items-center">
                     
                     { response.results.map((aProject) => (
-                        <ProjectItem key={aProject.id} dataId={aProject.id} data={aProject}/>
+                        <ProjectItem dataId={aProject.id} data={aProject}/>
                     ))}
                         
 
