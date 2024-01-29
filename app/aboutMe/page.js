@@ -15,13 +15,13 @@ export default function AboutMe(){
 
 
             {/* 경력, 활동, 자격증, 스킬 */}
-            <section class="min-h-screen body-font overflow-hidden">
-                <div class="container px-5 py-24 mx-auto">
+            <section className="min-h-screen body-font overflow-hidden">
+                <div className="container px-5 py-24 mx-auto">
 
-                    {/* <div class="flex flex-col text-center w-full mb-20">
-                        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">내 소개</h1>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
-                        <div class="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
+                    {/* <div className="flex flex-col text-center w-full mb-20">
+                        <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">내 소개</h1>
+                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+                        <div className="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
                             <button className="py-1
                                             px-4 
                                             bg-indigo-500 

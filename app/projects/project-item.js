@@ -8,7 +8,7 @@ import { layerStyle,
     addBodyStyle }
 from '../css.js';
 
-export default function ProjectItem({data}){
+export default function ProjectItem({dataId, data}){
 
     const title = data.properties.Name.title[0].plain_text
     const projectUrl = data.properties.Name.title[0].href
@@ -51,7 +51,7 @@ export default function ProjectItem({data}){
                                 transform                            
                                 hover:scale-105 
                                 hover:shadow-l
-                                bg-white" id={data.id}>
+                                bg-white" id={dataId}>
                 
                     <Image 
                             src={imgSrc}

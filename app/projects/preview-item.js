@@ -12,7 +12,6 @@ const PreviewItem = ({ itemId, itemName , itemImage}) => {
                                 transform 
                                 hover:scale-105 
                                 hover:shadow-l previewItem" >
-                {/* <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> */}
                 <Link href={`#${itemId}`} legacyBehavior>
                 <Image 
                     src={itemImage}

@@ -29,9 +29,9 @@ export default async function Projects() {
     return (
         <>
 
-            <section class="body-font">
-                <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-wrap -m-4">
+            <section className="body-font">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="flex flex-wrap -m-4">
                         { response.results.map((aProject) => (
                             <PreviewItem itemId={aProject.id} 
                                         itemName={aProject.properties.Name.title[0].plain_text}
@@ -56,9 +56,10 @@ export default async function Projects() {
                                 flex-col 
                                 items-center">
                     
-                    { response.results.map((aProject) => ( 
-                        <ProjectItem key={aProject.id} data={aProject}/>
+                    { response.results.map((aProject) => (
+                        <ProjectItem key={aProject.id} dataId={aProject.id} data={aProject}/>
                     ))}
+                        
 
                 </div>
             </section>
