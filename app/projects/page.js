@@ -33,7 +33,9 @@ export default async function Projects() {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         { response.results.map((aProject) => (
-                            <PreviewItem itemId={aProject.id} 
+                            <PreviewItem 
+                                        key={aProject.id}
+                                        itemId={aProject.id} 
                                         itemName={aProject.properties.Name.title[0].plain_text}
                                         itemImage={aProject.properties.Image.files[0].file.url} />
                         ))}
@@ -57,7 +59,7 @@ export default async function Projects() {
                                 items-center">
                     
                     { response.results.map((aProject) => (
-                        <ProjectItem dataId={aProject.id} data={aProject}/>
+                        <ProjectItem key={aProject.id} dataId={aProject.id} data={aProject}/>
                     ))}
                         
 
