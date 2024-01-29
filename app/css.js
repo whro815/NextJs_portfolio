@@ -1,23 +1,23 @@
 export const layerStyle = {
-    background:"#645CBB"
+    background:"#00592D"
 }
 
 export const layerFontStyle = {
-    color:"#645CBB"
+    color:"#fff"
 }
 
 export const bodyFontStyle = {
-    color:"#A084DC"
+    color:"#fff"
 }
 
 export const bodyStyle = {
-    background:"#BFACE2"
+    background:"#00592D"
 }
 
 export const addStyle = {
-    color:"#EBC7E6"
+    color:"#fff"
 }
 
 export const addBodyStyle = {
-    background:"#EBC7E6"
+    background:"#00592D"
 }

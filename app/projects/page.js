@@ -1,10 +1,13 @@
 import ProjectItem from './project-item';
+import ScrollButton from './scrollButton';
+import PreviewItem from './preview-item.js';
 import { layerStyle,
         addStyle,
         bodyStyle,
         bodyFontStyle,
         layerFontStyle }
 from '../css.js';
+
 
 export default async function Projects() {
 
@@ -22,24 +25,44 @@ export default async function Projects() {
                     },
                 ],
     });
-    
-   // console.log(JSON.stringify(response));
-
+      
     return (
         <>
+
+            <section class="body-font">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        { response.results.map((aProject) => (
+                            <PreviewItem itemId={aProject.id} 
+                                        itemName={aProject.properties.Name.title[0].plain_text}
+                                        itemImage={aProject.properties.Image.files[0].file.url} />
+                        ))}
+                    </div>
+                </div>    
+            </section>
+
+           <section className='flex 
+                                min-h-screen 
+                                flex-column 
+                                items-center 
+                                justify-center
+                                body-font' >
+                <div className="container 
+                                flex-column
+                                mx-auto 
+                                flex 
+                                px-5 
+                                py-32 
+                                flex-col 
+                                items-center">
                     
-            <div className="grid
-                            grid-cols-1
-                            md:grid-cols-2
-                            py-10 
-                            gap-8
-                            bg-violet-100
-                            sm-w-full">
-                
-                { response.results.map((aProject) => ( 
-                    <ProjectItem key={aProject.id} data={aProject}/>
-                ))}
-            </div>
+                    { response.results.map((aProject) => ( 
+                        <ProjectItem key={aProject.id} data={aProject}/>
+                    ))}
+
+                </div>
+            </section>
+            <ScrollButton/>
         </>
     )
     

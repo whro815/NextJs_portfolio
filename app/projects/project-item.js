@@ -38,23 +38,30 @@ export default function ProjectItem({data}){
 
     return(
         <>
-            <div className="flex
-                            flex-col 
-                            p-4 
-                            m-3 
-                            bg-neutral-50
-                            rounded-md 
-                            transition duration-300 transform border border-gray-300 hover:scale-105 hover:shadow-lg">
-                <Image 
-                        src={imgSrc}
-                        width={500}
-                        height={500}
-                        layout="responsive"
-                        objectFit="none"
-                        quality={100}
-                />
-                <div className="p-4 flex flex-col">
-                    
+
+            <div className="flex 
+                            md:flex-row 
+                            sm:flex-row 
+                            flex-wrap 
+                            justify-around">
+                
+                <div className="project-card
+                                transition 
+                                duration-300 
+                                transform                            
+                                hover:scale-105 
+                                hover:shadow-l
+                                bg-white" id={data.id}>
+                
+                    <Image 
+                            src={imgSrc}
+                            width={500}
+                            height={500}
+                            layout="responsive"
+                            objectFit="none"
+                            quality={100}
+                    />
+                
                     <h2 className="text-2xl font-bold">{ title } </h2>  
                     
                     <h2 className="mt-4 text-xl mb-2"> 
@@ -103,8 +110,7 @@ export default function ProjectItem({data}){
                             <a className="inline-flex 
                                         py-2
                                         px-6
-                                        focus:outline-none
-                                        hover:bg-indigo-600
+                                        focus:outline-none                                        
                                         text-lg" style={addStyle}>
                             사이트 이동
                             </a>

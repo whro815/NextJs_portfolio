@@ -34,7 +34,7 @@ export default async function Projects() {
     return (
         <>
     
-           <section id="skills" className="min-h-screen text-gray-600 body-font bg-violet-100">
+           <section id="skills" className="min-h-screen text-gray-600 body-font">
                
                 <div className="container px-5 py-24 mx-auto">
 
@@ -65,8 +65,8 @@ export default async function Projects() {
                             })
                             
                         } */}
-                        <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-indigo-500 p-6 rounded-lg bg-neutral-50">
+                        <div className="xl:w-1/3 md:w-1/2 p-4 ">
+                            <div className="previewItem p-6 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Html, Css, JavaScript</h2>
                                 <p className="leading-relaxed text-base text-gray-400">
                                     - 웹사이트의 구조 등을 활용<br/>
@@ -78,7 +78,7 @@ export default async function Projects() {
                         </div>
 
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-indigo-500 p-6 rounded-lg bg-neutral-50">
+                            <div className="previewItem p-6 rounded-lg bg-neutral-50 transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Java, Spring, SpringBoot</h2>
                                 <p className="leading-relaxed text-base text-gray-400">
                                     - 자바 기본 문법 이해<br/>
@@ -90,7 +90,7 @@ export default async function Projects() {
                         </div>
 
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-indigo-500 p-6 rounded-lg bg-neutral-50">
+                            <div className="previewItem p-6 rounded-lg bg-neutral-50 transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Oracle, MySql, MariaDB, Tibero</h2>
                                 <p className="leading-relaxed text-base text-gray-400">
                                     - 공통적으로 사용되는 SQL의 기본 문법 숙지<br/>
@@ -100,7 +100,7 @@ export default async function Projects() {
                         </div>
 
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-indigo-500 p-6 rounded-lg bg-neutral-50">
+                            <div className="previewItem p-6 rounded-lg bg-neutral-50 transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Git</h2>
                                 <p className="leading-relaxed text-base text-gray-400">
                                     - 기본 명령어 숙지<br/>
@@ -111,7 +111,7 @@ export default async function Projects() {
                         </div>
 
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-indigo-500 p-6 rounded-lg bg-neutral-50">
+                            <div className="previewItem p-6 rounded-lg bg-neutral-50 transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">IntelliJ, VSCode, Eclipse</h2>
                                 <p className="leading-relaxed text-base text-gray-400">
                                     - 코드 작성, 디버깅, 리팩토링 등의 작업 수행<br/>
@@ -122,7 +122,7 @@ export default async function Projects() {
                         </div>
                         
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-indigo-500 p-6 rounded-lg bg-neutral-50">
+                            <div className="previewItem p-6 rounded-lg bg-neutral-50 transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Notion</h2>
                                 <p className="leading-relaxed text-base text-gray-400">
                                     - 텍스트 기반의 노트 및 문서 작성<br/>

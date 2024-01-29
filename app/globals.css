@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+.project-card {
+  margin: 1.5rem;
+  display: flex;
+  max-width: 1024px;
+  flex-direction: column;
+  /* border-radius: .75rem;
+  border-width: 1px; */
+  --tw-border-opacity: 1;
+  /* border-color: rgb(209 213 219/var(--tw-border-opacity)); */
+  /* border-color :black; */
+  border:4px solid #00592D;
+  border-radius: 15px;
+  overflow: hidden;
+  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .5s
+}
+
+.scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #00592D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.previewItem {
+  border:4px solid #00592D;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
 
 
 /* :root {
