@@ -13,14 +13,14 @@ const PreviewItem = ({ itemId, itemName , itemImage}) => {
                                 hover:scale-105 
                                 hover:shadow-l previewItem" >
                 <Link href={`#${itemId}`} legacyBehavior>
-                <Image 
-                    src={itemImage}
-                    width={100}
-                    height={100}
-                    layout="responsive"
-                    objectFit="none"
-                    quality={100}
-                    />
+                  <Image 
+                      src={itemImage}
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      objectFit="none"
+                      quality={100}
+                      alt="이미지"/>
                 </Link>
             </div>
         </div>

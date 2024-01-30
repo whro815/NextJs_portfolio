@@ -60,7 +60,7 @@ export default function ProjectItem({dataId, data}){
                             layout="responsive"
                             objectFit="none"
                             quality={100}
-                    />
+                            alt="이미지"/>
                 
                     <h2 className="text-2xl font-bold">{ title } </h2>  
                     
