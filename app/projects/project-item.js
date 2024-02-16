@@ -116,7 +116,7 @@ export default function ProjectItem({dataId, data}){
                             </a>
                         </Link>
                      </div>
-                        {/* notion v1.2 */}
+                        {/* notion v1.3 */}
                 </div>
                 
             </div>
