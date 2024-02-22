@@ -1,3 +1,4 @@
+
 import ProjectItem from './project-item';
 import ScrollButton from './scrollButton';
 import PreviewItem from './preview-item.js';
@@ -12,7 +13,7 @@ from '../css.js';
 export default async function Projects() {
 
     const { Client } = require('@notionhq/client');
-  
+
     const notion = new Client({ auth: process.env.NOTION_TOKEN });
     const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -25,6 +26,8 @@ export default async function Projects() {
                     },
                 ],
     });
+
+    // console.log(response.results);
       
     return (
         <>
@@ -34,10 +37,11 @@ export default async function Projects() {
                     <div className="flex flex-wrap -m-4">
                         { response.results.map((aProject) => (
                             <PreviewItem 
-                                        key={aProject.id}
-                                        itemId={aProject.id} 
+                                        key     ={aProject.id}
+                                        itemId  ={aProject.id} 
                                         itemName={aProject.properties.Name.title[0].plain_text}
-                                        itemImage={aProject.properties.Image.files[0].file.url} />
+                                        itemImage      ={aProject.properties.Image.files[0].file.url}
+                                        itemImageMacth ={aProject.properties.imgMatch.rich_text[0].plain_text}/>
                         ))}
                     </div>
                 </div>    

@@ -1,5 +1,10 @@
 'use client'
 import Animation from './components/animation.js'
+import AboutMe from './components/aboutMe.js'
+import Skills from './components/skills.js'
+import ScrollButton from './projects/scrollButton';
+// import Projects from './components/projects.js'
+// import Projects from './projects/page.js'
 import Link from 'next/link';
 import { layerStyle,
          addStyle,
@@ -18,7 +23,7 @@ export default function Home() {
                       flex-col
                       items-center
                       justify-center
-                      body-font">
+                      body-font" id={`Main`}>
 
           <div className="container
                           mx-auto 
@@ -38,7 +43,7 @@ export default function Home() {
                               mb-16 
                               md:mb-0 
                               items-center 
-                              text-center">
+                              text-center" >
                           
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
                       <TypeIt options={{
@@ -50,7 +55,6 @@ export default function Home() {
                       }}/>
                     </h1>
                      
-                    
                     <p className="mb-8 leading-relaxed text-black">
                       웹 개발자 과정을 통해 백엔드 개발자로 진로를 택했습니다.<br/>
                       <br/>
@@ -76,7 +80,7 @@ export default function Home() {
                                         프로젝트
                         </button>
 
-                        <button className="flex
+                        {/* <button className="flex
                                         mx-auto 
                                         text-white  
                                         border-0 
@@ -87,9 +91,9 @@ export default function Home() {
                                         rounded 
                                         text-lg"
                                         style={layerStyle}
-                                        onClick={() => {window.open('https://whro815.github.io/portfo','_blank')}}>
+                                        onClick={() => {window.open('','_blank')}}>
                                         문서
-                        </button>
+                        </button> */}
 
                      </p>
 
@@ -99,11 +103,14 @@ export default function Home() {
                 <Animation/>
               </div>
         </div>
+      </section>
         {/* <div className='wave_body'>
           <diV className="wave"></diV>
         </div> */}
-        
-      </section>
+      <AboutMe />
+      <Skills />
+      <ScrollButton />
+      {/* <Projects/> */}
     </>
   )
 }

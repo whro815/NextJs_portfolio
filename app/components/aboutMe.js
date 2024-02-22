@@ -1,22 +1,9 @@
-'use client';
+export default function ComponentAboutMe(){
 
-import Link from 'next/link';
-import Projects from '../components/projects.js'
-
-import { layerStyle,
-    addStyle,
-    bodyStyle,
-    bodyFontStyle,
-    layerFontStyle }
-from '../css.js';
-
-export default function AboutMe(){
     return(
-        <>
-
-
-            {/* 경력, 활동, 자격증, 스킬 */}
-            <section className="min-h-screen body-font overflow-hidden">
+      <>
+        {/* 경력, 활동, 자격증, 스킬 */}
+        <section className="min-h-screen body-font overflow-hidden" id={`AboutMe`}>
                 <div className="container px-5 py-24 mx-auto">
 
                     {/* <div className="flex flex-col text-center w-full mb-20">
@@ -33,6 +20,11 @@ export default function AboutMe(){
                             <button className="py-1 px-4 focus:outline-none">Annually</button>
                         </div>
                     </div> */}
+
+                    <div className="flex flex-col text-center w-full mb-20">
+                            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">AboutMe</h1>
+                    </div>
+
                     
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4
@@ -182,9 +174,6 @@ export default function AboutMe(){
                     </div>
                 </div>
             </section>
-            
-            <Projects/>
-            
-        </>
-    );
+      </>
+    )
 }

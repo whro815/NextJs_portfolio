@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from 'next/link';
 import { layerStyle,
@@ -7,6 +9,17 @@ import { layerStyle,
     layerFontStyle,
     addBodyStyle }
 from '../css.js';
+
+import { bio
+         , boardJPA   
+         , ciaton     
+         , dicle      
+         , hycu       
+         , jobWork    
+         , joPortFolio
+         , jwt        
+         , klink      
+         , wiki       } from '../projects/project-image.js'
 
 export default function ProjectItem({dataId, data}){
 
@@ -35,6 +48,8 @@ export default function ProjectItem({dataId, data}){
     const sc2_1_1 = data.properties.sc2_1_1.rich_text[0].plain_text
     const sc2_2 = data.properties.sc2_2.rich_text[0].plain_text
 
+    {/* dicle, hycu, ciaton, dual, wiki, klink, bio, portFolio, board, jwt */}
+    const imgMatch = data.properties.imgMatch.rich_text[0].plain_text;
 
     return(
         <>
@@ -52,15 +67,46 @@ export default function ProjectItem({dataId, data}){
                                 hover:scale-105 
                                 hover:shadow-l
                                 bg-white" id={dataId}>
-                
-                    <Image 
+                  
+                    {
+                        imgMatch === 'bio'
+                        ? <Image src={ bio } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="bio 이미지"/>
+                        : ( imgMatch === 'boardJPA' 
+                            ? <Image src={ boardJPA } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="boardJPA 이미지"/>
+                            : ( imgMatch === 'ciaton' 
+                                ? <Image src={ ciaton } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="ciaton 이미지"/>
+                                : ( imgMatch === 'dicle' 
+                                    ? <Image src={ dicle } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="dicle 이미지"/>
+                                    : ( imgMatch === 'hycu'
+                                        ? <Image src={ hycu } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="hycu 이미지"/>
+                                        : ( imgMatch === 'jobWork'
+                                            ? <Image src={ jobWork } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="jobWork 이미지"/>
+                                            : ( imgMatch === 'joPortFolio'
+                                                ? <Image src={ joPortFolio } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="joPortFolio 이미지"/>
+                                                : ( imgMatch === 'jwt'
+                                                    ? <Image src={ jwt } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="jwt 이미지"/>
+                                                    : ( imgMatch === 'klink'
+                                                        ? <Image src={ klink } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="klink 이미지"/>
+                                                        : ( imgMatch === 'wiki' && <Image src={ wiki } width={500} height={500} layout="responsive" objectFit="none" quality={100} alt="klink 이미지"/> )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                          )
+                    }
+
+
+                    {/* <Image 
                             src={imgSrc}
                             width={500}
                             height={500}
                             layout="responsive"
                             objectFit="none"
                             quality={100}
-                            alt="이미지"/>
+                            alt="이미지"/> */}
                 
                     <h2 className="text-2xl font-bold">{ title } </h2>  
                     
