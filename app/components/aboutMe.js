@@ -5,22 +5,7 @@ export default function ComponentAboutMe(){
         {/* 경력, 활동, 자격증, 스킬 */}
         <section className="min-h-screen body-font overflow-hidden" id={`AboutMe`}>
                 <div className="container px-5 py-24 mx-auto">
-
-                    {/* <div className="flex flex-col text-center w-full mb-20">
-                        <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">내 소개</h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
-                        <div className="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
-                            <button className="py-1
-                                            px-4 
-                                            bg-indigo-500 
-                                            text-white 
-                                            focus:outline-none 
-                                            hover:bg-gray-900"
-                                            onClick={() => window.open("https://whro815.github.io/portfo/","_blank")} >My Doc</button>
-                            <button className="py-1 px-4 focus:outline-none">Annually</button>
-                        </div>
-                    </div> */}
-
+                
                     <div className="flex flex-col text-center w-full mb-20">
                             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">AboutMe</h1>
                     </div>
@@ -151,23 +136,6 @@ export default function ComponentAboutMe(){
                                 <p className="flex items-center mb-2">
                                     <span className="text-xs text-gray-500">(재학중)</span>
                                 </p>
-
-                                {/* <p className="flex items-center mb-2">
-                                    <button className="flex
-                                                    mx-auto 
-                                                    text-white  
-                                                    border-0 
-                                                    py-2 
-                                                    px-8 
-                                                    focus:outline-none 
-                                                    hover:bg-indigo-600 
-                                                    rounded 
-                                                    text-lg"
-                                                    style={layerStyle}
-                                                    onClick={() => {window.open('/skills','_top')}}>
-                                                더보기
-                                    </button>
-                                </p> */}
 
                             </div>
                         </div>

@@ -107,7 +107,7 @@ export default function Home() {
         {/* <div className='wave_body'>
           <diV className="wave"></diV>
         </div> */}
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Skills />
       <ScrollButton />
       {/* <Projects/> */}
