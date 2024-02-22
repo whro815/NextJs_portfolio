@@ -7,32 +7,11 @@ import { layerStyle, addStyle, bodyStyle } from '../css.js';
 import styles from './Menu.css';
 import { useState, useEffect } from 'react';
 
-const Header = () =>{
-  
-    const [scrollY, setScrollY] = useState(0);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        console.log(window.scrollY)
-        setScrollY(window.scrollY);
-      };
-      console.log('='+handleScroll);
-      window.addEventListener('scroll', handleScroll);
-
-      return () => {
-        console.log('='+handleScroll);
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+export default function Header(){
 
     return(
       <>
-          <header className="body-font ${scrollY > 0 ? styles.menuScrolled : styles.menu'}" style={layerStyle}>
-
-            {/* <header className={scrollY > 0 ? styles.menuScrolled : styles.menu} > */}
-
-            {/* <div className={styles.menuList}> */}
-
+         <header className="body-font" style={layerStyle}>
             <div className="container
                             mx-auto 
                             flex 
@@ -93,5 +72,4 @@ const Header = () =>{
           </header>
       </>
     );
-};
-export default Header;
+}
