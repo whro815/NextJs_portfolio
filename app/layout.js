@@ -1,6 +1,8 @@
 import './globals.css'
-import Layout from './components/layout'
+//import Layout from './components/layout'
 import { Nanum_Gothic_Coding } from 'next/font/google'
+import Header from './components/header'
+import Footer from './components/footer';
 
 export const metadata = {
   title: '조계현 포트폴리오',
@@ -17,9 +19,9 @@ export default function RootLayout({ children }) {
     <>
       <html lang="en" suppressHydrationWarning>
         <body className={nanumGothicCoding.className}>
-          <Layout>
+          <Header/>
             {children}
-          </Layout>
+          <Footer/>
         </body>
       </html>
     </>
