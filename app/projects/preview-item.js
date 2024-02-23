@@ -3,20 +3,18 @@ import Link from 'next/link';
 import Image from "next/image";
 
 import { bio
-  , boardJPA   
-  , ciaton     
-  , dicle      
-  , hycu       
-  , jobWork    
-  , joPortFolio
-  , jwt        
-  , klink      
-  , wiki       } from '../projects/project-image.js'
+        , boardJPA   
+        , ciaton     
+        , dicle      
+        , hycu       
+        , jobWork    
+        , joPortFolio
+        , jwt        
+        , klink      
+        , wiki       
+} from '../projects/project-image.js'
 
 const PreviewItem = ({ itemId, itemName, itemImage, itemImageMacth}) => {
-
-
-
 
   return (
     <>

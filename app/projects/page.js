@@ -26,8 +26,6 @@ export default async function Projects() {
                     },
                 ],
     });
-
-    // console.log(response.results);
       
     return (
         <>
@@ -47,26 +45,11 @@ export default async function Projects() {
                 </div>    
             </section>
 
-           <section className='flex 
-                                min-h-screen 
-                                flex-column 
-                                items-center 
-                                justify-center
-                                body-font' >
-                <div className="container 
-                                flex-column
-                                mx-auto 
-                                flex 
-                                px-5 
-                                py-32 
-                                flex-col 
-                                items-center">
-                    
+           <section className='flex min-h-screen flex-column items-center justify-center body-font' >
+                <div className="container flex-column mx-auto flex px-5 py-32 flex-col items-center">
                     { response.results.map((aProject) => (
                         <ProjectItem key={aProject.id} dataId={aProject.id} data={aProject}/>
-                    ))}
-                        
-
+                    ))} 
                 </div>
             </section>
             <ScrollButton/>

@@ -1,5 +1,4 @@
 import './globals.css'
-//import Layout from './components/layout'
 import { Nanum_Gothic_Coding } from 'next/font/google'
 import Header from './components/header'
 import Footer from './components/footer';

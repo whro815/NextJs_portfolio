@@ -1,3 +1,4 @@
+// 프로젝트 이미지 (정적)
 export const bio        = require('../../public/images/projects/bio.png');
 export const boardJPA   = require('../../public/images/projects/boardJPA.png');
 export const ciaton     = require('../../public/images/projects/ciaton.png');
