@@ -9,7 +9,6 @@ import { layerStyle,
         layerFontStyle }
 from '../css.js';
 
-
 export default async function Projects() {
 
     const { Client } = require('@notionhq/client');

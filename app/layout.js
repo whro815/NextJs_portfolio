@@ -14,6 +14,7 @@ const nanumGothicCoding = Nanum_Gothic_Coding({
                   })
 
 export default function RootLayout({ children }) {
+
   return (
     <>
       <html lang="en" suppressHydrationWarning>

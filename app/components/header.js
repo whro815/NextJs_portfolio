@@ -23,7 +23,8 @@ export default function Header(){
                   </a>
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center" style={addStyle}>
-                  <Link href={`#Main`} legacyBehavior>
+                  {/* <Link href={`#Main`} legacyBehavior> */}
+                  <Link href="/" legacyBehavior>
                       <a className="mr-5 hover:text-gray-900" >메인</a>
                   </Link>
                   <Link href={`#AboutMe`} legacyBehavior>
@@ -32,7 +33,10 @@ export default function Header(){
                   <Link href={`#Skills`} legacyBehavior>
                       <a className="mr-5 hover:text-gray-900" >스킬</a>
                   </Link>
-                  <a href="https://whro815.github.io/portfo" className="mr-5 hover:text-gray-900" target="_blank" rel="noopener noreferrer" >
+                  <a href="https://whro815.github.io/portfo" 
+                      className="mr-5 hover:text-gray-900" 
+                      target="_blank" 
+                      rel="noopener noreferrer" >
                       문서
                   </a>
                   <Link href="/projects" legacyBehavior>
