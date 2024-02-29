@@ -214,7 +214,7 @@ export default function Home() {
                 <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
                 <TypeIt options={{
                                 strings: ["Skills"],
-                                speed: 400,
+                                speed: 150,
                                 loop: true,
                                 loopDelay: [2500],
                                 waitUntilVisible: true,
@@ -225,11 +225,11 @@ export default function Home() {
                 {
                     mainSkills.map((ele) => {
                         return (                        
-                                <div className="xl:w-1/3 md:w-1/2 p-4">
+                                <div className="xl:w-1/3 md:w-1/2 p-4" key={`${ele.lang}-${ele.ability}`}>
                                     <div className="previewItem p-6 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg">
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-2">{ele.lang}</h2>
                                         <ul>
-                                            <li key={`${ele.lang}-${ele.ability}`}>
+                                            <li>
                                                 <div className="ability-bar">
                                                     <Ability ability={ele.ability}>
                                                         <div className="ability-percent">
